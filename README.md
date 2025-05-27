@@ -1,6 +1,5 @@
 # Taaskin2
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-%5E19.0.0-red)
 ![Node.js](https://img.shields.io/badge/Node.js-v22.13.1-green)
 
@@ -12,7 +11,7 @@
 
 Con node.js y npm instalado:
 ```sh
-    npm create vite@latest my-app --template react
+    npm create vite@latest front --template react
 ```
 
 En la carpeta del proyecto:
