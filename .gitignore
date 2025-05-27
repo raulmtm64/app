@@ -13,7 +13,6 @@ lerna-debug.log*
 dist
 dist-ssr
 *.local
-readme2
 
 # Editor directories and files
 .vscode/*
@@ -25,3 +24,5 @@ readme2
 *.njsproj
 *.sln
 *.sw?
+
+README2.md
