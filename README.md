@@ -9,10 +9,10 @@
 
 ## - Creación
 
-Con node.js y npm instalado:
+<!-- Con node.js y npm instalado:
 ```sh
     npm create vite@latest front --template react
-```
+``` -->
 
 En la carpeta del proyecto:
 ```sh
