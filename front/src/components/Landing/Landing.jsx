@@ -8,7 +8,9 @@ export default function Landing() {
   return (
     <div className="principalLanding">
         <LogoLanding/>
-        <Login/>
+        <div className='usuarioLanding'>
+          <Login/>
+        </div>
     </div>
   );
 }

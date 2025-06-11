@@ -6,3 +6,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.usuarioLanding{
+    background-color: #c2c2b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
