@@ -1,6 +1,11 @@
 import './Login.css'
 
+import { useNavigate } from 'react-router-dom';
+
 export default function Login() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="login">
       <h1 className="tituloLogin">Login</h1>
@@ -8,20 +13,24 @@ export default function Login() {
         <form className="formLogin">
           <input 
             type="text" 
-            placeholder="Usuario"
+            placeholder="User / Email"
             className="inputLogin"
           />
           <input 
             type="text" 
-            placeholder="Contraseña"
+            placeholder="Password"
             className="inputLogin"
            />
-          <button className='botonLogin'>Entrar</button>
+          <button className='botonLogin'>Sign in</button>
         </form>
       </div>
       <div className="controlesLogin"> 
-        <button className="botonLogin">¿Has olvidado la contraseña?</button>
-        <button className="botonLogin">Registrarse</button>
+        <button className="botonRegister" onClick={() => navigate('/')}>
+          Forgotten password?
+        </button>
+        <button className="botonRegister" onClick={() => navigate('/register')}>
+          Sign up
+        </button>
       </div>
     </div>
   );

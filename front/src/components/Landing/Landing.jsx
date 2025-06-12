@@ -1,6 +1,9 @@
 import './Landing.css'
 
+import { Routes, Route } from 'react-router-dom';
+
 import Login from '../Login/Login.jsx';
+import Register from '../Register/Register.jsx';
 import LogoLanding from '../LogoLanding/LogoLanding.jsx';
 
 export default function Landing() {
@@ -9,7 +12,10 @@ export default function Landing() {
     <div className="principalLanding">
         <LogoLanding/>
         <div className='usuarioLanding'>
-          <Login/>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
         </div>
     </div>
   );

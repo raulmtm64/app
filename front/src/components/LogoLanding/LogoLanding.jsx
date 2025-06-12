@@ -7,10 +7,10 @@ export default function LogoLanding() {
       <div className="divLogo">
         <h1 className="tituloLogo">Taaskin</h1>
         <p className="parrafoLogo">
-          Organiza tu día, alcanza tus metas y mantén el control de tus prioridades.
+          Organize your day, achieve your goals and keep control of your priorities.
         </p>
         <p className="parrafoLogo">
-          Sencilla y hecha para adaptarse a tu ritmo de vida.
+          Simple and made to adapt to your rhythm of life.
         </p>
       </div>
     </div>
