@@ -19,6 +19,8 @@ class Login(APIView):
         password = request.data.get('password')
         filter_kwargs = {user_identifier: user}
 
+        print(f"{user}, {password}")
+
         if not user or not password:
             return Response({"error":"Missing data"}, status=status.HTTP_400_BAD_REQUEST)
         

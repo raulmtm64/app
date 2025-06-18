@@ -1,7 +1,12 @@
-import api from './api';
+import axios from 'axios';
 
-export const getUsers = () => api.get('/users/');
-export const getUser = (id) => api.get(`/users/${id}/`);
-export const createUser = (data) => api.post('/users/', data);
-export const updateUser = (id, data) => api.put(`/users/${id}/`, data);
-export const deleteUser = (id) => api.delete(`/users/${id}/`);
+const API_URL = "http://localhost:8000/api/users";
+
+export const login = async (userData) => {
+    try {
+        const response = await axios.post(`${API_URL}/login/`, userData);
+        return response.data;  
+    } catch (error) {
+        throw error.response?.data || { error: 'Error desconocido' };
+  }
+}
