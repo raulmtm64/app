@@ -1,14 +1,24 @@
-.principalLanding{
+.Landing{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 214, 219, 0.479);
+}
+
+.principalLanding{
+    width: 85%;
+    height: 80%;
     display: grid;
+    border-radius: 8px;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #0d2425c9;
 }
 
 .usuarioLanding{
-    background-color: #e9e9e2;
     display: flex;
     justify-content: center;
     align-items: center;

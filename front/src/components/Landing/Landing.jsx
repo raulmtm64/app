@@ -9,7 +9,8 @@ import LogoLanding from '../LogoLanding/LogoLanding.jsx';
 export default function Landing() {
 
   return (
-    <div className="principalLanding">
+    <div className="Landing">
+      <div className='principalLanding'>
         <LogoLanding/>
         <div className='usuarioLanding'>
           <Routes>
@@ -17,6 +18,7 @@ export default function Landing() {
             <Route path="/register" element={<Register />} />
           </Routes>
         </div>
+      </div>
     </div>
   );
 }

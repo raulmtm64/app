@@ -47,12 +47,12 @@ export default function Register() {
             className="inputRegister"
            />
 
-          <button className='botonRegister botonColumnaRegister'>Sign up</button>
+          <button className='botonRegister botonColumnaRegister'>Confirm</button>
         </form>
       </div>
       <div className="controlesRegister"> 
         <button className="botonRegister" onClick={() => navigate('/')}>
-          Sign in
+          Log in
         </button>
       </div>
     </div>
