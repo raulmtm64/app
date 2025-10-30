@@ -1,0 +1,72 @@
+.fondoPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup{
+    background-color: rgba(0, 173, 189, 0.85);
+    border-radius: 12px;
+    width: 30%;
+    height: 35%;
+    display: grid;
+    grid-template-rows: 40% 20% 21% 19%;
+}
+
+.imgErrorPopup{
+    background-image: url('../../assets/img/as.png');
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.errorPopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+.errorExtensoPopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: rgb(27, 44, 44);
+}
+
+.botonesErrorPopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonCerrarError{
+    width: 60%;
+    height: 50%;
+     font-weight: bolder;
+    font-size: 135%;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #fff;
+    color: black;
+}
+
+.botonCerrarError:hover{
+    background-color: rgb(150, 175, 176);
+    color: black;
+}

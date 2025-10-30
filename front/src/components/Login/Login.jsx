@@ -1,6 +1,6 @@
 import './Login.css'
+import ErrorPopUp from '../ErrorPopUp/ErrorPopUp';
 
-import {login} from '../../services/users'
 
 import axios from 'axios';
 import React, {useState} from 'react';
@@ -13,6 +13,7 @@ export default function Login() {
   const [userIdentifier, setUserIdentifier] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const [errorDetails, setErrorDetails] = useState('');
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -23,6 +24,7 @@ export default function Login() {
 
     if (!userIdentifier || !password) {
       setError('Please fill in all fields');
+      setErrorDetails('Both username/email and password are required')
       return;
     }
 
@@ -65,7 +67,14 @@ export default function Login() {
         </form>
       </div>
 
-      {error && <p style={{color: 'red', textAlign: 'center', fontSize: '3vw'}}>{error}</p>}
+      <ErrorPopUp
+        message={error}
+        details={errorDetails}
+        onClose={() => {
+          setError(null);
+          setErrorDetails('');
+        }}
+      />
 
       <div className="controlesLogin"> 
         <button className="botonRegister" onClick={() => navigate('/')}>

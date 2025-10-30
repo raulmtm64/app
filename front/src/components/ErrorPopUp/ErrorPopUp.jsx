@@ -1,20 +1,25 @@
-import React from "react";
+import './ErrorPopUp.css';
 
-const ErrorPopup = ({message, onClose}) => {
+export default function ErrorPopup ({message, details, onClose}) {
     if (!message) return null;
 
     return(
-        <div className="popup">
-            <div className="errorPopup">
-                <h3 className="tituloErrorPopup">
+        <div className="fondoPopup">
+            <div className='popup'>
+                <div className='imgErrorPopup'>
+                    
+                </div>
+                <div className="errorPopup">
                     Error: { message }
-                </h3>
-            </div>
-            <div className="errorExtensoPopup">
-
-            </div>
-            <div className="botonesErrorPopup">
-
+                </div>
+                <div className="errorExtensoPopup">
+                    { details }
+                </div>
+                <div className="botonesErrorPopup">
+                    <button className="botonCerrarError" onClick={onClose}>
+                        Cerrar
+                    </button>
+                </div>
             </div>
         </div>
     );
