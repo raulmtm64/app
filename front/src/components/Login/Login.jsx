@@ -24,7 +24,7 @@ export default function Login() {
 
     if (!userIdentifier || !password) {
       setError('Please fill in all fields');
-      setErrorDetails('Both username/email and password are required')
+      setErrorDetails('Both username/email and password are required');
       return;
     }
 
@@ -38,7 +38,6 @@ export default function Login() {
       console.log('Login success:', responseLogin.data);
       setError(null)
 
-      // PULIR --> ENVIAR A ALGUNA PAGINA
     } catch (errorLogin) {
       console.log(errorLogin)
     }
