@@ -6,16 +6,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(154, 214, 219, 0.479);
+    background-image: url('../../assets/img/back-img/fondo13.png');
 }
 
 .principalLanding{
     width: 85%;
     height: 80%;
     display: grid;
-    border-radius: 8px;
+    border-radius: 15px;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #0d2425c9;
+    background-color: #2c2f309c;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .usuarioLanding{

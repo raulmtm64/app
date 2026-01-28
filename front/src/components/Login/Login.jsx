@@ -33,7 +33,7 @@ export default function Login() {
       : {"nick": userIdentifier, "password": password};
 
     try{
-      const responseLogin = await axios.post("http://localhost:8000/api/users/login/", data)
+      const responseLogin = await axios.post("http://localhost:8080/auth/login", data)
 
       console.log('Login success:', responseLogin.data);
       setError(null)
@@ -66,14 +66,16 @@ export default function Login() {
         </form>
       </div>
 
-      <ErrorPopUp
-        message={error}
-        details={errorDetails}
-        onClose={() => {
-          setError(null);
-          setErrorDetails('');
-        }}
-      />
+      {error && (
+        <ErrorPopUp
+          message={error}
+          details={errorDetails}
+          onClose={() => {
+            setError(null);
+            setErrorDetails('');
+          }}
+        />
+      )}
 
       <div className="controlesLogin"> 
         <button className="botonRegister" onClick={() => navigate('/')}>
